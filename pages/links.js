@@ -20,7 +20,7 @@ export default function Links() {
         <div className="social_icons">
           {
             data.icons.map((item) => (
-              <a key={item.id} href={item.href} target="_blank"><i class={item.iconName}></i></a>
+              <a key={item.id} href={item.href} target="_blank"><i className={item.iconName}></i></a>
             ))
           }
         </div>
