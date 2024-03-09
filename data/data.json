@@ -19,32 +19,32 @@
         {
             "id": "1",
             "href": "https://www.instagram.com/volneidesigner/",
-            "className": "instagram"
+            "iconName": "fab fa-instagram"
         },
         {
             "id": "2",
             "href": "https://www.behance.net/volneidesigner",
-            "className": "behance"
+            "iconName": "fab fa-behance"
         },
         {
             "id": "3",
             "href": "https://api.whatsapp.com/send/?phone=5554984199148",
-            "className": "whatsapp"
+            "iconName": "fab fa-whatsapp"
         },
         {
             "id": "4",
             "href": "",
-            "className": "facebook"
+            "iconName": "fab fa-tiktok"
         },
         {
             "id": "5",
             "href": "",
-            "className": "telegram"
+            "iconName": "fab fa-telegram"
         },
         {
             "id": "6",
             "href": "",
-            "className": "tiktok"
+            "iconName": "fas fa-envelope"
         }
     ],
     "images": [
