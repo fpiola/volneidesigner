@@ -1,23 +1,46 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import data from '../data/data.json';
+import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>{data.head.title}</title>
+        <meta name="keywords" content={data.head.keywords} />
+        <meta name="author" content="" />
+        <meta name="description" content={data.head.description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header>
+        <Image src={data.profileImage.src} width={data.profileImage.width} height={data.profileImage.height} loading="lazy" className='logo' alt={data.profileImage.alt} />
+        <h2 style={{ color: data.profileText.color }}>{data.profileText.text}</h2>
+        <div className="social_icons">
+          {data.icons.map((item) => (
+            <a key={item.id} href={item.href} target="_blank">
+              <FontAwesomeIcon icon={['fab', `${item.className}`]} size="1x" />
+            </a>
+          ))}
+        </div>
+      </header>
+
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <main>
+          {data.images.map(({ id, src, alt, href, width, height }) => (
+            <div className="image" key={id}>
+              <a href={href} target="_blank">
+                <Image src={src} width={width} height={height} className='img' loading="lazy" alt={alt} />
+              </a>
+            </div>
+          ))}
+        </main>
       </main>
 
-      <Footer />
+      <footer style={{ backgroundColor: data.footer.background }}>
+        <p style={{ color: data.footer.color }}>{data.footer.text}</p>
+      </footer>
     </div>
   )
 }

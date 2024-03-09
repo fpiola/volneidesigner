@@ -1,0 +1,97 @@
+{
+    "head": {
+        "title": "Volnei Rodrigues",
+        "keywords": "palavras-chave relevantes.",
+        "description": "Aqui você deve escrever uma breve descrição do seu site."
+    },
+    "backgroundColor": "#EFEFEF",
+    "profileImage": {
+        "src": "/images/foto-perfil-500x500.jpg",
+        "alt": "Texto alternativo da imagem perfil",
+        "width": "500",
+        "height": "500"
+    },
+    "profileText": {
+        "text": "Volnei Rodrigues",
+        "color": "#5A40A9"
+    },
+    "icons": [
+        {
+            "id": "1",
+            "href": "https://www.instagram.com/volneidesigner/",
+            "className": "instagram"
+        },
+        {
+            "id": "2",
+            "href": "https://www.behance.net/volneidesigner",
+            "className": "behance"
+        },
+        {
+            "id": "3",
+            "href": "https://api.whatsapp.com/send/?phone=5554984199148",
+            "className": "whatsapp"
+        },
+        {
+            "id": "4",
+            "href": "",
+            "className": "facebook"
+        },
+        {
+            "id": "5",
+            "href": "",
+            "className": "telegram"
+        },
+        {
+            "id": "6",
+            "href": "",
+            "className": "tiktok"
+        }
+    ],
+    "images": [
+        {
+            "id": "1",
+            "src": "/images/img1-1024x508.jpg",
+            "href": "",
+            "alt": "Texto alternativo da imagem 1",
+            "width": "768",
+            "height": "384"
+        },
+        {
+            "id": "2",
+            "src": "/images/img2-1024x508.jpg",
+            "href": "",
+            "alt": "Texto alternativo da imagem 2",
+            "width": "768",
+            "height": "384"
+        },
+        {
+            "id": "3",
+            "src": "/images/img3-1024x508.jpg",
+            "href": "",
+            "alt": "Texto alternativo da imagem 3",
+            "width": "768",
+            "height": "384"
+        },
+        {
+            "id": "4",
+            "src": "/images/img4-1024x508.jpg",
+            "href": "",
+            "alt": "Texto alternativo da imagem 4",
+            "width": "768",
+            "height": "384"
+        },
+        {
+            "id": "5",
+            "src": "/images/img5-1024x508.jpg",
+            "href": "",
+            "alt": "Texto alternativo da imagem 5",
+            "width": "768",
+            "height": "384"
+        }
+    ],
+    "footer": {
+        "text": "© 2024 Todos os direitos reservados - Volnei Rodrigues.",
+        "color": "white",
+        "background": "#5A40A9"
+    }
+}
