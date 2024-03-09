@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import data from '../data/data.json';
+import data from '@data/data.json';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
