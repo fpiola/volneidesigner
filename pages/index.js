@@ -5,9 +5,14 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('G-7RZ7NKX2DM');
 
 function handleClick(item) {
+  // Faça o que você precisa aqui, como abrir o link em uma nova guia
+  window.open(item.href, '_blank');
+
+  // Adicione um evento de rastreamento do Google Analytics
   ReactGA.event({
-    category: 'Clique em ícone social',
-    action: `Clicou em: ${item.href}`
+    category: 'Social Icons',
+    action: 'Click',
+    label: item.iconName
   });
 }
 
