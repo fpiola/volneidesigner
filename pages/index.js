@@ -2,7 +2,7 @@ import Head from 'next/head'
 import data from '@data/data.json';
 import Image from 'next/image';
 import ReactGA from 'react-ga';
-ReactGA.initialize(data.googleAnalyticsId);
+ReactGA.initialize('G-7RZ7NKX2DM');
 
 function handleClick(item) {
   ReactGA.event({
