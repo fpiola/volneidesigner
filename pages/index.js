@@ -1,20 +1,6 @@
 import Head from 'next/head'
 import data from '@data/data.json';
 import Image from 'next/image';
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-7RZ7NKX2DM');
-
-function handleClick(item) {
-  // Faça o que você precisa aqui, como abrir o link em uma nova guia
-  window.open(item.href, '_blank');
-
-  // Adicione um evento de rastreamento do Google Analytics
-  ReactGA.event({
-    category: 'Social Icons',
-    action: 'Click',
-    label: item.iconName
-  });
-}
 
 export default function Home() {
   return (
@@ -32,7 +18,7 @@ export default function Home() {
         <div className="social_icons">
           {
             data.icons.map((item) => (
-              <a key={item.id} href={item.href} target="_blank" onClick={() => handleClick(item)}><i className={item.iconName}></i></a>
+              <a key={item.id} href={item.href} target="_blank"><i className={item.iconName}></i></a>
             ))
           }
         </div>
