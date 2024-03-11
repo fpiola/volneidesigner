@@ -66,7 +66,7 @@ main {
   padding: 25px 25px;
 }
 
-.image .img {
+.image img {
   border-radius: 10px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
   height: auto;
@@ -75,7 +75,7 @@ main {
   transition: transform 0.6s ease;
 }
 
-.image .img:hover {
+.image img:hover {
   transform: rotate(4deg) scale(1.1);
 }
 
