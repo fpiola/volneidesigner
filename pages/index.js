@@ -1,6 +1,15 @@
 import Head from 'next/head'
 import data from '@data/data.json';
 import Image from 'next/image';
+import ReactGA from 'react-ga';
+ReactGA.initialize(data.googleAnalyticsId);
+
+function handleClick(item) {
+  ReactGA.event({
+    category: 'Clique em ícone social',
+    action: `Clicou em: ${item.href}`
+  });
+}
 
 export default function Home() {
   return (
@@ -18,7 +27,7 @@ export default function Home() {
         <div className="social_icons">
           {
             data.icons.map((item) => (
-              <a key={item.id} href={item.href} target="_blank"><i className={item.iconName}></i></a>
+              <a key={item.id} href={item.href} target="_blank" onClick={() => handleClick(item)}><i className={item.iconName}></i></a>
             ))
           }
         </div>
